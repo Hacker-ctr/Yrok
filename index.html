@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <p>Я текст в начале body. Напишите селектор, который отменяет у всех внутренние и внешние отступы по умолчанию и также для всех пропишите box-sizing: border-box;</p>
+  <header style="background-color:yellow ;">
+    <h1>Я заголовок первого уровня в header. Добавь мне нижний отступ.</h1>
+    <p>Я заголовок первого уровня в header. Добавь мне нижний отступ. Я текст в header. Background у header yellow, внутренний отступ 20px. Для текста в header добавь верхний отступ 20px.</p>
+  </header>
+  <footer>
+  <p>Я текст без засечек. Я опишу кнопку снизу. У нее есть верхний отступ 20px, снизу отступ 40px, размер текста 20px.  Закругление углов 20px. Добавь границу, цвет и задний фон на свой вкус</p>
+  <button class="Knopka">Я кнопка</button>
+  <img src="https://avatars.mds.yandex.net/i?id=fe0d5e06b805a921ab68ca227e8f049e890152b9-4885223-images-thumbs&n=13" class="Ne-Knopka img-delate" alt="">
+  <p>Я текст в подвале. Стилизуйте его на свой вкус. Можете добавить ещё элементы</p>
+  </footer> 
+
+  <script>
+    let Knopar = document.querySelector(".Knopka")
+    let Knopachka = document.querySelector(".Ne-Knopka")
+
+    Knopar.addEventListener("click", ()=> {
+      Knopachka.classList.toggle("img-delate")
+    })
+  </script>
+</body>
+</html>
